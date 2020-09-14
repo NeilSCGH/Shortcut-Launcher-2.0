@@ -33,6 +33,12 @@ namespace Shortcut_Launcher_2._0
                 return new Button(data[0], data[1]);
             });
         }
+        
+        private void Btn01_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hey");
+            Btn01.Visibility = Visibility.Hidden;
+        }
     }
 
     public class Button
