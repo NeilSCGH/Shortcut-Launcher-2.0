@@ -3,9 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    
+        Title="MainWindow" Height="300" Width="1000" Topmost="True" ResizeMode="NoResize" Deactivated="Window_Deactivated" WindowStyle="None" AllowsTransparency="True" Activated="Window_Activated" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" >
+    <Window.Background>
+        <SolidColorBrush Color="White" Opacity="0"/>
+    </Window.Background>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -32,7 +34,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn02" Grid.Row="1" Grid.Column="0"  FontSize="20">02
+        <Button x:Name="Btn02" Grid.Row="1" Grid.Column="0"  FontSize="20" Click="Btn02_Click">02
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -40,7 +42,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn03" Grid.Row="2" Grid.Column="0"  FontSize="20">03
+        <Button x:Name="Btn03" Grid.Row="2" Grid.Column="0"  FontSize="20" Click="Btn03_Click">03
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -48,7 +50,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn04" Grid.Row="3" Grid.Column="0"  FontSize="20">04
+        <Button x:Name="Btn04" Grid.Row="3" Grid.Column="0"  FontSize="20" Click="Btn04_Click">04
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -56,7 +58,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn05" Grid.Row="4" Grid.Column="0"  FontSize="20">05
+        <Button x:Name="Btn05" Grid.Row="4" Grid.Column="0"  FontSize="20" Click="Btn05_Click">05
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -64,7 +66,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn06" Grid.Row="0" Grid.Column="1"  FontSize="20">06
+        <Button x:Name="Btn06" Grid.Row="0" Grid.Column="1"  FontSize="20" Click="Btn06_Click">06
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -72,7 +74,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn07" Grid.Row="1" Grid.Column="1"  FontSize="20">07
+        <Button x:Name="Btn07" Grid.Row="1" Grid.Column="1"  FontSize="20" Click="Btn07_Click">07
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -80,7 +82,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn08" Grid.Row="2" Grid.Column="1"  FontSize="20">08
+        <Button x:Name="Btn08" Grid.Row="2" Grid.Column="1"  FontSize="20" Click="Btn08_Click">08
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -88,7 +90,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn09" Grid.Row="3" Grid.Column="1"  FontSize="20">09
+        <Button x:Name="Btn09" Grid.Row="3" Grid.Column="1"  FontSize="20" Click="Btn09_Click">09
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -96,7 +98,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn10" Grid.Row="4" Grid.Column="1"  FontSize="20">10
+        <Button x:Name="Btn10" Grid.Row="4" Grid.Column="1"  FontSize="20" Click="Btn10_Click">10
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -104,7 +106,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn11" Grid.Row="0" Grid.Column="2"  FontSize="20">11
+        <Button x:Name="Btn11" Grid.Row="0" Grid.Column="2"  FontSize="20" Click="Btn11_Click">11
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -112,7 +114,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn12" Grid.Row="1" Grid.Column="2"  FontSize="20">12
+        <Button x:Name="Btn12" Grid.Row="1" Grid.Column="2"  FontSize="20" Click="Btn12_Click">12
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -120,7 +122,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn13" Grid.Row="2" Grid.Column="2"  FontSize="20">13
+        <Button x:Name="Btn13" Grid.Row="2" Grid.Column="2"  FontSize="20" Click="Btn13_Click">13
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -128,7 +130,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn14" Grid.Row="3" Grid.Column="2"  FontSize="20">14
+        <Button x:Name="Btn14" Grid.Row="3" Grid.Column="2"  FontSize="20" Click="Btn14_Click">14
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -136,7 +138,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn15" Grid.Row="4" Grid.Column="2"  FontSize="20">15
+        <Button x:Name="Btn15" Grid.Row="4" Grid.Column="2"  FontSize="20" Click="Btn15_Click">15
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -144,7 +146,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn16" Grid.Row="0" Grid.Column="3"  FontSize="20">16
+        <Button x:Name="Btn16" Grid.Row="0" Grid.Column="3"  FontSize="20" Click="Btn16_Click">16
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -152,7 +154,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn17" Grid.Row="1" Grid.Column="3"  FontSize="20">17
+        <Button x:Name="Btn17" Grid.Row="1" Grid.Column="3"  FontSize="20" Click="Btn17_Click">17
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -160,7 +162,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn18" Grid.Row="2" Grid.Column="3"  FontSize="20">18
+        <Button x:Name="Btn18" Grid.Row="2" Grid.Column="3"  FontSize="20" Click="Btn18_Click">18
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -168,7 +170,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn19" Grid.Row="3" Grid.Column="3"  FontSize="20">19
+        <Button x:Name="Btn19" Grid.Row="3" Grid.Column="3"  FontSize="20" Click="Btn19_Click">19
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -176,7 +178,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn20" Grid.Row="4" Grid.Column="3"  FontSize="20">20
+        <Button x:Name="Btn20" Grid.Row="4" Grid.Column="3"  FontSize="20" Click="Btn20_Click">20
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -184,7 +186,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn21" Grid.Row="0" Grid.Column="4"  FontSize="20">21
+        <Button x:Name="Btn21" Grid.Row="0" Grid.Column="4"  FontSize="20" Click="Btn21_Click">21
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -192,7 +194,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn22" Grid.Row="1" Grid.Column="4"  FontSize="20">22
+        <Button x:Name="Btn22" Grid.Row="1" Grid.Column="4"  FontSize="20" Click="Btn22_Click">22
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -200,7 +202,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn23" Grid.Row="2" Grid.Column="4"  FontSize="20">23
+        <Button x:Name="Btn23" Grid.Row="2" Grid.Column="4"  FontSize="20" Click="Btn23_Click">23
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -208,7 +210,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn24" Grid.Row="3" Grid.Column="4"  FontSize="20">24
+        <Button x:Name="Btn24" Grid.Row="3" Grid.Column="4"  FontSize="20" Click="Btn24_Click">24
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -216,7 +218,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Btn25" Grid.Row="4" Grid.Column="4"  FontSize="20">25
+        <Button x:Name="Btn25" Grid.Row="4" Grid.Column="4"  FontSize="20" Click="Btn25_Click">25
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
